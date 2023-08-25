@@ -1,0 +1,109 @@
+
+body{
+ background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 100%) , url('https://www.slashgear.com/img/gallery/netflix-4k-streaming-on-macos-big-sur-to-require-a-t2-security-chip/intro-import.jpg');
+ background-size: cover;
+}
+
+span{
+    color: RED;
+    font-size: 40px;
+    margin: 20px;
+    padding: 50px;
+    font-weight: 100;
+    /* padding-top: 0 auto; */
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+nav{
+   display: flex;
+   float: right;
+   gap: 10px;
+   margin-right: 70px;
+   padding-top: 20px;
+   align-items: center;
+    
+}
+button{
+    background-color: red;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+h1 {
+    color: white;
+    font-size: 80px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+   
+}
+h3{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    justify-content: center;
+   
+}
+P{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+   
+}
+
+input{
+    height: 40px;
+     width: 300px;
+     border: 2px solid white;
+     border-radius: 6px;
+     background-color: transparent;
+     border-color: grey;
+     text-align: left;
+     font-size: 16px;
+     
+     
+}
+input:hover{
+    background-color: transparent;
+    color: white;
+    /* font-size: 20px; */
+}
+button:hover{
+    /* font-size: 25px;  */
+    cursor: pointer;
+    background-color: transparent;
+}
+button{
+    color: white;
+    text-align: center;
+    padding: 10px 25px;
+  
+}
+select{
+    padding: 5px 15px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+select:hover{
+    cursor: pointer;
+}
+.hello{
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.para{
+    display: block;
+    padding-top: 150px;
+    align-items: center;
+
+    justify-content: center;
+}

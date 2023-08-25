@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Edittor </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="text">Design Your Web Page Here !</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="left">
+         
+            <label><i class="fa-brands fa-html5"></i>HTML</label>
+          <textarea  id="html-code" onkeyup="run()"></textarea>
+          
+      
+            <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+          <textarea  id="css-code" onkeyup="run()"></textarea>
+      
+            <label><i class="fa-brands fa-js"></i>JAVASCRIPT</label>
+          <textarea  id="js-code" onkeyup="run()"></textarea>
+          
+        </div>
+      
+      <div class="right">
+        <label><i class="fa-solid fa-play"></i>output</label>
+        <iframe id="output" ></iframe>
+      </div>
+      </div>
+        
+      <script>
+        function run() {
+          var html = document.getElementById("html-code").value;
+          var css = document.getElementById("css-code").value;
+          var js = document.getElementById("js-code").value;
+          var output = document.getElementById("output").contentDocument;
+          
+          output.open();
+          output.write(html + "<style>" + css + "</style>");
+          output.close();
+          
+          try {
+            output.defaultView.eval(js);
+          } catch (error) {
+            console.error(error);
+          }
+        }
+      </script>
+    </body>
+    </html>
+      </script>
+    
+    
+</body>
+</html>
